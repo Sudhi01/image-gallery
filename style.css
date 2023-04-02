@@ -30,5 +30,39 @@
     width:32%;
     overflow: hidden;
     position: relative;
-
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.card img{
+    height:100%;
+    width:100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    
+}
+.card:hover{
+    transform: scale(1.03);
+    filter:drop-shadow(0 0 10px #333);
+    transition: 1s;
+}
+.card:hover img{
+    filter:grayscale(0%);
+}
+.card figcaption{
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin:15px;
+    height:20;
+    font-size: 16px;
+    font-weight: 300;
+    color:white;
+    opacity:0;
+    transition: 1s;
+    border-radius: 0 0 10px 10px;
+    
+}
+.card:hover figcaption{
+    opacity:1;
+    transform: scale(1);
 }
